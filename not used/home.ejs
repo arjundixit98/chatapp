@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form id="form" action="/submit" method="post">
+      Full name :
+      <input
+        id="input"
+        type="text"
+        name="fullname"
+        placeholder="Enter your full name"
+      />
+      Username :
+      <input
+        id="input"
+        type="text"
+        name="username"
+        placeholder="Enter your username"
+      />
+      <button>Enter Chat Room</button>
+    </form>
+
+    </form>
+    <script>
+      const form = document.getElementById("form");
+      const input = document.getElementById("input");
+
+      // form.addEventListener("submit", (e) => {
+      //   e.preventDefault();
+      //   console.log(`Username : ${input.value}`);
+      //   input.value = "";
+      // });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial;
+}
+
+input::placeholder{
+  font-size: 18px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #36dfbd;
+  height: 100vh;
+}
+
+.header {
+  background-color: #32b49a;
+  width: 450px;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  font-size: 45px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.main {
+  background-color: white;
+  width: 450px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.email-entry,
+.pwd-entry {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  padding: 5px;
+}
+
+.pwd-entry {
+  margin-top: 10px;
+}
+.input-sec {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+input {
+  width: 300px;
+  height: 45px;
+  border: 1px solid lightgray;
+  padding-left: 8px;
+}
+
+.login-sec {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon-div {
+  background-color: #32b49a;
+  height: 45px;
+  width: 45px;
+  text-align: center;
+  padding-top: 6px;
+  font-size: 23px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  color: white;
+}
+
+.username,.fullname,
+.pwd {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+button {
+  width: 360px;
+  border: none;
+  border-radius: 5px;
+  height: 45px;
+  background-color: #32b49a;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 10px;
+  cursor: pointer;
+  font-size: 25px;
+}
+
+.login-sec p {
+  display: inline-block;
+}
+
+.link {
+  align-self: flex-start;
+  margin-left: 50px;
+}
+
+a {
+  color: #1aa085;
+  text-decoration: none;
+}
+
+.main p,
+a {
+  font-size: 18px;
+}
+
+.pwd-entry{
+  display: none;
+}

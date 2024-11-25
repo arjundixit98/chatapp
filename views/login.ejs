@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link href="/stylesheets/login.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="header">
+      <p>Login Form</p>
+    </div>
+    <form class="main" id="form">
+      <div class="input-sec">
+        <div class="email-entry">
+          <div class="icon-div">
+            <i class="fa fa-user"></i>
+          </div>
+          <input
+            type="text"
+            id="username"
+            class="username"
+            placeholder="Username"
+          />
+        </div>
+        <div class="email-entry">
+          <div class="icon-div">
+            <i class="fa fa-user"></i>
+          </div>
+          <input
+            type="text"
+            id="fullname"
+            class="fullname"
+            placeholder="Full Name"
+          />
+        </div>
+        <div class="pwd-entry">
+          <div class="icon-div">
+            <i class="fa fa-lock"></i>
+          </div>
+          <input type="text" class="pwd" placeholder="Password" />
+        </div>
+        <div class="link">
+          <a href="www.google.com">Forgot password?</a>
+        </div>
+      </div>
+
+      <div class="login-sec">
+        <button id="room-btn">Chat Room</button>
+        <button id="private-btn">Private Chat</button>
+        <div>
+          <p>Not a member?</p>
+          <a href="www.google.com">Sign Up Now</a>
+        </div>
+      </div>
+    </form>
+    <script>
+      const roomChatBtn = document.getElementById("room-btn");
+      const privateChatBtn = document.getElementById("private-btn");
+
+      roomChatBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        const username = document.getElementById("username").value;
+        const fullname = document.getElementById("fullname").value;
+
+        window.location.href = `/chat-room?username=${username}&fullname=${fullname}`;
+      });
+
+      privateChatBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        const username = document.getElementById("username").value;
+        const fullname = document.getElementById("fullname").value;
+        window.location.href = `/private-chat?username=${username}&fullname=${fullname}`;
+      });
+    </script>
+  </body>
+</html>
